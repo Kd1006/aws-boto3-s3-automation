@@ -5,7 +5,7 @@ It simulates a common cloud-support / cloud-engineer task: managing S3 objects p
 
 ---
 
-## 🎯 Goal
+## Goal
 
 Use a simple Python script to:
 
@@ -19,7 +19,7 @@ Bucket used in this project: **`kd-boto3-demo-bucket`**
 
 ---
 
-## 🧰 Technologies Used
+## Technologies Used
 
 - **Amazon S3**
 - **AWS IAM** (programmatic user)
@@ -31,9 +31,9 @@ Bucket used in this project: **`kd-boto3-demo-bucket`**
 
 ---
 
-## 🛠 Setup & Steps I Followed
+## Setup & Steps I Followed
 
-### 1️⃣ Created IAM user for programmatic access
+### Created IAM user for programmatic access
 
 - Created a dedicated IAM user for this project
 - Attached the **AmazonS3FullAccess** policy (demo only; in real projects I would restrict this to a single bucket)
@@ -43,7 +43,7 @@ Bucket used in this project: **`kd-boto3-demo-bucket`**
 
 ---
 
-### 2️⃣ Created S3 bucket
+### Created S3 bucket
 
 Created an S3 bucket:
 
@@ -51,11 +51,11 @@ Created an S3 bucket:
 - Region: `us-east-1`
 - Block Public Access: all ON (this is not a public website)
 
-📸 `screenshots/03-s3-demo-bucket-created.png`
+`screenshots/03-s3-demo-bucket-created.png`
 
 ---
 
-### 3️⃣ Configured AWS CLI
+### Configured AWS CLI
 
 Configured AWS CLI with the IAM user’s access key and secret key:
 
